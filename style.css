@@ -1,0 +1,59 @@
+
+:root{
+    --primary_color:#d5e1ef;
+    --secondary_color:white;
+    --third_color:rgb(162, 162, 162);
+    --police: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+
+body{
+    background-color: var(--primary_color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#container{
+    background-color: var(--secondary_color);
+    padding: 1rem;
+    box-sizing: content-box;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50% 1rem 50% 1rem;
+
+}
+
+.qrcode{
+    border-radius: 10px;
+}
+
+.text{
+    font-family:var(--police);
+    text-align: center;
+    font-size: 4.5vw;
+    font-weight: bold;
+}
+
+p{
+    color:var(--third_color);
+}
+
+
+@media screen and (min-width:768px){
+
+body{
+    align-items: center;
+}
+
+#container{
+    width: 40%;
+}
+
+.text{
+    font-size: 2vw;
+}
+
+
+    
+}
